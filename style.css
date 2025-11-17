@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Light Theme */
+body {
+    background: #f7f7f7;
+    color: #222;
+    transition: 0.5s;
+}
+
+/* Dark Theme */
+.dark {
+    background: #101010;
+    color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background: #222;
+    color: #fff;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Theme Button */
+.theme-btn {
+    position: fixed;
+    right: 25px;
+    top: 20px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0px 0px 10px #bbb;
+}
+
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Fade Animation */
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-in-out;
+}
+
+.fade.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Profile Image */
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Skills */
+.skill-box {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    transition: transform .3s;
+}
+
+.skill-box img {
+    width: 70px;
+}
+
+.skill-box:hover, .project:hover {
+    transform: scale(1.08);
+}
+
+/* Project cards */
+.project {
+    margin: 12px;
+    padding: 12px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.dark .project {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Submit Button */
+.sub-btn {
+    background: #008cff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.sub-btn:hover {
+    transform: scale(1.05);
+    background: #006ad1;
+}
+
+/* Social Media Icons */
+.social-links {
+    margin-top: 10px;
+}
+
+.icon {
+    width: 35px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.15);
+}
+
+/* Recommendation Input */
+#new-rec {
+    width: 60%;
+    height: 70px;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 8px;
+      }
