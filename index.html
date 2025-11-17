@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritik Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-btn" onclick="toggleTheme()">🌓</button>
+
+    <!-- Header -->
+    <header>
+        <h2 class="logo">Ritik Kumar Singh</h2>
+        <nav>
+            <ul>
+                <li><a href="#home">🏠 Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project Details</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section fade">
+        <h1 class="title">Welcome to My Portfolio 🚀</h1>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section fade">
+        <img src="https://via.placeholder.com/150" class="profile-pic" alt="profile">
+        <h2>About Me</h2>
+        <p>Hello, I am <strong>Ritik Kumar Singh</strong>.  
+        I am a front-end developer & passionate learner, skilled in HTML, CSS and JavaScript.  
+        Contact: <b>ritikksingh234@gmail.com</b></p>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://github.com/ritikksingh234" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/ritik-kumar-singh-cse" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="icon">
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section fade">
+        <h2>My Skills</h2>
+        <div class="skill-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+            <p>HTML</p>
+        </div>
+        <div class="skill-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+            <p>CSS</p>
+        </div>
+        <div class="skill-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+            <p>JavaScript</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section fade">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>1️⃣ Student Result Dashboard</h3>
+            <p>A web app to enter, calculate & display student marks using JavaScript.</p>
+        </div>
+        <div class="project">
+            <h3>2️⃣ Weather Info App</h3>
+            <p>Displays real-time weather data using API & responsive UI.</p>
+        </div>
+        <div class="project">
+            <h3>3️⃣ Online Notes Saver</h3>
+            <p>Allows users to create and store notes locally using localStorage.</p>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="section fade">
+        <h2>Recommendations</h2>
+        <ul id="rec-list">
+            <li>Ritik is a dedicated learner and always improves.</li>
+            <li>Very good web designing skills.</li>
+            <li>Team player & completes tasks on time.</li>
+        </ul>
+
+        <textarea id="new-rec" placeholder="Write new recommendation..."></textarea><br>
+        <button class="sub-btn" onclick="addRecommendation()">Submit</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
